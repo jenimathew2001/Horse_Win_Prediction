@@ -26,7 +26,7 @@ So I built **race-relative features**:
 * `OddsRank1` and `OddsRank2`: The horse’s market odds rank.
 * `TrainerRating_rel`: Trainer quality relative to the field.
 
-These features gave the model real context—like telling it, *“This horse is above average today, even if it’s not fast on an absolute scale.”* It’s like saying Usain Bolt isn’t just fast—he’s fast *compared to everyone else on the track*.
+These features gave the model real context, like telling it, *“This horse is above average today, even if it’s not fast on an absolute scale.”* It’s like saying Usain Bolt isn’t just fast—he’s fast *compared to everyone else on the track*.
 
 I also encoded track conditions (`Going`) using a rank-based system (from Firm to Heavy) and used z-score normalization for numeric features to standardize across varying ranges.
 
