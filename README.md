@@ -26,7 +26,7 @@ So I built **race-relative features**:
 * `OddsRank1` and `OddsRank2`: The horse’s market odds rank.
 * `TrainerRating_rel`: Trainer quality relative to the field.
 
-These features gave the model real context, like telling it, *“This horse is above average today, even if it’s not fast on an absolute scale.”* It’s like saying Usain Bolt isn’t just fast—he’s fast *compared to everyone else on the track*.
+These features gave the model real context, like telling it, *“This horse is above average today, even if it’s not fast on an absolute scale.”* It’s like saying Usain Bolt isn’t just fast, he’s fast *compared to everyone else on the track*.
 
 I also encoded track conditions (`Going`) using a rank-based system (from Firm to Heavy) and used z-score normalization for numeric features to standardize across varying ranges.
 
@@ -62,7 +62,7 @@ The best configuration (logistic regression with tuned parameters and softmax no
 | **Sensitivity**       | 67.39% |
 | **Specificity**       | 58.17% |
 
-These results show a well-calibrated model—one that’s cautious where needed and confident when deserved.
+These results show a well-calibrated model, one that’s cautious where needed and confident when deserved.
 
 ---
 
@@ -87,12 +87,12 @@ Future improvements could include:
 
 ![Model vs Market](./ML_EXPERIMENTATION/market.png)
 
-This scatter plot shows how the model's predicted win probabilities compare to those implied by the betting market. The dashed line represents perfect agreement—if every point fell on that line, it would mean the model and market completely agree.
+This scatter plot shows how the model's predicted win probabilities compare to those implied by the betting market. The dashed line represents perfect agreement, if every point fell on that line, it would mean the model and market completely agree.
 
 In reality, most points fall below the line, meaning the model tends to predict lower win probabilities than the market does. Still, there's a clear upward trend: when the market thinks a horse has a higher chance of winning, the model usually agrees (to some extent). The **Pearson correlation of 0.5422** supports that there’s a meaningful relationship between the two.
 
 **Why this matters:**
-The market reflects collective opinion, money, and often experience—so it’s a strong benchmark. Matching it too closely might mean the model isn’t adding anything new. But some disagreement can be a good thing, it may suggest the model is spotting horses that the market is underestimating, which could lead to valuable betting opportunities.
+The market reflects collective opinion, money, and often experience, so it’s a strong benchmark. Matching it too closely might mean the model isn’t adding anything new. But some disagreement can be a good thing, it may suggest the model is spotting horses that the market is underestimating, which could lead to valuable betting opportunities.
 
 ---
 
@@ -103,7 +103,7 @@ The market reflects collective opinion, money, and often experience—so it’s 
 This chart shows the top 20 horses with the most wins in the dataset. *Jordan Electrics* stands out with the highest number of wins, followed by several others that consistently perform well.
 
 **Why this matters:**
-This helps us sanity-check the model. If it's assigning high probabilities to horses like these (who actually win often), that's a strong sign it’s learning useful patterns. It also highlights horses that might be consistently beating expectations—possibly uncovering talent or conditions the market isn't pricing in correctly.
+This helps us sanity-check the model. If it's assigning high probabilities to horses like these (who actually win often), that's a strong sign it’s learning useful patterns. It also highlights horses that might be consistently beating expectations, possibly uncovering talent or conditions the market isn't pricing in correctly.
 
 ---
 
