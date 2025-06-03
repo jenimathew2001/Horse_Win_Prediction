@@ -81,6 +81,37 @@ Future improvements could include:
 * Testing more expressive models (like gradient boosting) once the feature set is optimized.
 
 ---
+Great! Here's a rewritten version of the section using a more intuitive, simple, and natural tone—while keeping it professional and informative. You can place this right after your evaluation section:
+
+---
+### Some Additional Sections
+
+### 📊 Model vs. Market: Predicted Probabilities
+
+![Model vs Market](./ML_EXPERIMENTATION/market.png)
+
+This scatter plot shows how the model's predicted win probabilities compare to those implied by the betting market. The dashed line represents perfect agreement—if every point fell on that line, it would mean the model and market completely agree.
+
+In reality, most points fall below the line, meaning the model tends to predict lower win probabilities than the market does. Still, there's a clear upward trend: when the market thinks a horse has a higher chance of winning, the model usually agrees (to some extent). The **Pearson correlation of 0.5422** supports that there’s a meaningful relationship between the two.
+
+**Why this matters:**
+The market reflects collective opinion, money, and often experience—so it’s a strong benchmark. Matching it too closely might mean the model isn’t adding anything new. But some disagreement can be a good thing—it may suggest the model is spotting horses that the market is underestimating, which could lead to valuable betting opportunities.
+
+---
+
+### 🏆 Who’s Winning? A Look at Top Performers
+
+![Top 20 Horses](./ML_EXPERIMENTATION/top20.png)
+
+This chart shows the top 20 horses with the most wins in the dataset. *Jordan Electrics* stands out with the highest number of wins, followed by several others that consistently perform well.
+
+**Why this matters:**
+This helps us sanity-check the model. If it's assigning high probabilities to horses like these (who actually win often), that's a strong sign it’s learning useful patterns. It also highlights horses that might be consistently beating expectations—possibly uncovering talent or conditions the market isn't pricing in correctly.
+
+---
+
+Let me know if you'd like a version with embedded Markdown formatting or if you'd like to tweak the tone for a more academic or casual style.
+
 
 ### 🏁 Final Thoughts
 
