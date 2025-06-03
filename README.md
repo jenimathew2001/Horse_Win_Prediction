@@ -110,9 +110,6 @@ This helps us sanity-check the model. If it's assigning high probabilities to ho
 
 ---
 
-Let me know if you'd like a version with embedded Markdown formatting or if you'd like to tweak the tone for a more academic or casual style.
-
-
 ### 🏁 Final Thoughts
 
 In horse racing, just like in life, context is everything. A horse’s raw ability is only half the story , how it stacks up *today* against *this field* on *this track* is what really matters.
