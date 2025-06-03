@@ -10,7 +10,7 @@ The task was simple in principle but tricky in execution: for each horse in a ra
 
 I started off by testing several machine learning models like : logistic regression, decision trees, random forests, and gradient boosting methods. At first, the results weren’t exciting. But when I applied **class-balanced weighting**, things started to change.
 
-Why did this help? Well, in most races, only *one* horse wins, so there are far more examples of non-winners. Without correction, the model might just learn to always say “not a winner.” With **class-balanced weights**, we tell the model: *“Yes, winners are rare, but they’re important—so give their examples more attention.”* Mathematically, this adjusts the loss function to weigh rare positive cases more heavily, making the model pay more attention to them.
+Why did this help? Well, in most races, only *one* horse wins, so there are far more examples of non-winners. Without correction, the model might just learn to always say “not a winner.” With **class-balanced weights**, we tell the model: *“Yes, winners are rare, but they’re important so give their examples more attention.”* Mathematically, this adjusts the loss function to weigh rare positive cases more heavily, making the model pay more attention to them.
 
 Among all the models, **logistic regression** turned out to be the most stable and reliable, especially once we properly tuned it and scaled the features.
 
@@ -81,9 +81,6 @@ Future improvements could include:
 * Testing more expressive models (like gradient boosting) once the feature set is optimized.
 
 ---
-Great! Here's a rewritten version of the section using a more intuitive, simple, and natural tone—while keeping it professional and informative. You can place this right after your evaluation section:
-
----
 ### Some Additional Sections
 
 ### 📊 Model vs. Market: Predicted Probabilities
@@ -95,7 +92,7 @@ This scatter plot shows how the model's predicted win probabilities compare to t
 In reality, most points fall below the line, meaning the model tends to predict lower win probabilities than the market does. Still, there's a clear upward trend: when the market thinks a horse has a higher chance of winning, the model usually agrees (to some extent). The **Pearson correlation of 0.5422** supports that there’s a meaningful relationship between the two.
 
 **Why this matters:**
-The market reflects collective opinion, money, and often experience—so it’s a strong benchmark. Matching it too closely might mean the model isn’t adding anything new. But some disagreement can be a good thing—it may suggest the model is spotting horses that the market is underestimating, which could lead to valuable betting opportunities.
+The market reflects collective opinion, money, and often experience—so it’s a strong benchmark. Matching it too closely might mean the model isn’t adding anything new. But some disagreement can be a good thing, it may suggest the model is spotting horses that the market is underestimating, which could lead to valuable betting opportunities.
 
 ---
 
